@@ -148,9 +148,13 @@ function setKittenMood(kitten) {
  * remember to save this change
  */
 function clearKittens(){
+    if (windows.confirm("You're a monster!")) {
+    // I had no idea how to empty an array so I found this function on stack overflow
+    // it seems to work by taking the entire array "length" and setting it to zero
   kittens.splice(0,kittens.length)
   saveKittens()
   drawKittens()
+}
 }
 
 function deleteKitten(id){
