@@ -58,7 +58,8 @@ function drawKittens() {
   
   kittens.forEach(kitten => {
     template += `<div id="${kitten.id}" class="card">
-    <span>${kitten.name}  ${kitten.mood}</span>
+    <span class="p-2 permanent-marker">${kitten.name}</span>
+    <span>${kitten.mood}</span>
     <div class="kitten ${kitten.mood}">
      <img src="https://robohash.org/${kitten.id}.png/?set=set4">
      </div>

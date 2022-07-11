@@ -301,3 +301,7 @@ button.btn-delete:hover{
 .hidden{
   display: none !important;
 }
+
+.permanent-marker{
+  font-family: 'Permanent Marker', cursive;
+}
