@@ -14,6 +14,7 @@ function addKitten(event) {
       id: generateId(),
       name: form.name.value,
       mood: "",
+      //I chose to start with a random affection number because I thought it would be funny, but I realize that sometimes this means a new cat will start out "gone"
       affection: generateAffection(),
     }
 
